@@ -26,7 +26,7 @@ dependencies = [
 shopee = "shopee_cli.cli:main"
 
 [project.urls]
-Repository = "https://github.com/user/shopee-cli"
+Repository = "https://github.com/shroominic/shopee-cli"
 
 [build-system]
 requires = ["hatchling"]

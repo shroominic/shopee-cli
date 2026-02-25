@@ -16,7 +16,7 @@ Requires Python 3.12+ and Chrome installed.
 
 ```bash
 # Clone and install
-git clone https://github.com/user/shopee-cli.git
+git clone https://github.com/shroominic/shopee-cli.git
 cd shopee-cli
 uv sync
 
