@@ -1,0 +1,36 @@
+[project]
+name = "shopee-cli"
+version = "0.1.0"
+description = "CLI tool to interact with Shopee Malaysia from the terminal"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+keywords = ["shopee", "cli", "malaysia", "ecommerce"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet",
+]
+dependencies = [
+    "click>=8.1",
+    "rich>=13.7",
+    "undetected-chromedriver>=3.5.5",
+    "setuptools>=75.0",
+    "pillow>=10.0",
+]
+
+[project.scripts]
+shopee = "shopee_cli.cli:main"
+
+[project.urls]
+Repository = "https://github.com/user/shopee-cli"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/shopee_cli"]
